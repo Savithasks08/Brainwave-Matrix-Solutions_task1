@@ -1,0 +1,138 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+  margin: 0;
+  padding: 40px 20px;
+}
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  text-align: center;
+  color: #2d3748;
+  margin-bottom: 5px;
+}
+#quote {
+  font-style: italic;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #2d3748;
+}
+
+.author {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.95rem;
+  color: #4a5568;
+}
+
+#date {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #4a5568;
+  margin-bottom: 20px;
+}
+
+.addTaskBtn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #38a169, #48bb78);
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.addTaskBtn:hover {
+  background: linear-gradient(to right, #2f855a, #38a169);
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.task-row {
+  display: flex;
+  align-items: center;
+  background-color: #edf2f7;
+  border-radius: 12px;
+  padding: 12px;
+  gap: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.task-row:hover {
+  transform: translateY(-2px);
+}
+
+.task-row.dragging {
+  opacity: 0.6;
+}
+
+.task {
+  flex: 1;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.task:focus {
+  border-color: #63b3ed;
+}
+
+.saveBtn,
+.deleteBtn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.saveBtn {
+  background-color: #4299e1;
+  color: white;
+}
+
+.saveBtn:hover {
+  background-color: #3182ce;
+}
+
+.deleteBtn {
+  background-color: #e53e3e;
+  color: white;
+}
+
+.deleteBtn:hover {
+  background-color: #c53030;
+}
+
+
+.saved {
+  background-color: #e6fffa; 
+}
+
+.unsaved {
+  background-color: #f7fafc; 
+}
